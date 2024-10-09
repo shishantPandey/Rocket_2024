@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    transition: background-color 1s; /* Smooth background color transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.5s; /* Smooth transition for background color */
+}
+
+.bounce {
+    animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+    
+}
+
+#status, #countdown {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#countdown {
+    color: #dc3545; /* Red color for countdown */
+}
+
+#status {
+    color: #17a2b8; /* Blue color for status updates */
+}
